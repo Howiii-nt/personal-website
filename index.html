@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Howard Rincon – Personal Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="stage" id="stage">
+    <div class="card-shadow" id="cardShadow"></div>
+
+    <div class="card-tilt" id="cardTilt" data-theme="navy">
+      <div class="card-flip" id="cardFlip">
+
+        <div class="card-face card-front">
+          <div class="card-row-top">
+            <div class="chip"></div>
+            <div class="network-mark">
+              <div class="network-rings"><span></span><span></span></div>
+              <span>Cybersecurity · AI</span>
+            </div>
+          </div>
+
+          <div class="card-id-block">
+            <div class="card-role">Cardholder</div>
+            <div class="card-name">Howard Rincon</div>
+          </div>
+
+          <div class="perks-row">
+            <div class="perk"><span class="perk-dot"></span><span>Cybersecurity & AI trajectory</span></div>
+            <div class="perk"><span class="perk-dot"></span><span>Calm under pressure</span></div>
+            <div class="perk"><span class="perk-dot"></span><span>Result-focused mindset</span></div>
+          </div>
+
+          <p class="card-tagline">
+            Self-aware, tech-driven, and ready to turn complex problems into clear results.
+          </p>
+
+          <div class="actions-row">
+            <button class="face-btn" type="button" data-modal-target="strengths-modal">What I Bring to the Table</button>
+            <button class="face-btn" type="button" data-modal-target="background-modal">Background</button>
+          </div>
+
+          <div class="cta-row">
+            <button class="cta" type="button" id="connectBtn">
+              <span>Let's talk</span>
+              <span>↗</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="card-face card-back">
+          <p class="back-eyebrow">Personalize</p>
+
+          <div class="back-body">
+            <button class="photo-frame" type="button" id="photoFrame" aria-label="Add a photo">
+              <img id="photoPreview" alt="" />
+              <span class="photo-icon">📷</span>
+              <span class="photo-label">Add photo</span>
+              <span class="photo-remove" id="photoRemove" title="Remove photo">×</span>
+            </button>
+
+            <div class="theme-panel">
+              <p class="theme-label">Card style</p>
+              <div class="theme-swatches" id="themeSwatches">
+                <button class="swatch swatch-navy is-active" type="button" data-theme="navy" aria-label="Navy theme"></button>
+                <button class="swatch swatch-emerald" type="button" data-theme="emerald" aria-label="Emerald theme"></button>
+                <button class="swatch swatch-violet" type="button" data-theme="violet" aria-label="Violet theme"></button>
+                <button class="swatch swatch-slate" type="button" data-theme="slate" aria-label="Slate theme"></button>
+                <button class="swatch swatch-ember" type="button" data-theme="ember" aria-label="Ember theme"></button>
+              </div>
+            </div>
+          </div>
+
+          <p class="back-hint">Saved on this device.</p>
+        </div>
+
+        <div class="card-edge card-edge-right"></div>
+        <div class="card-edge card-edge-left"></div>
+
+      </div>
+    </div>
+
+    <button class="flip-control" id="flipControl" type="button" aria-label="Flip card to see the back">
+      <span class="flip-icon">⟳</span>
+    </button>
+  </div>
+
+  <p class="hint-text">The card spins gently on its own — click it to stop up front, then use the button beside it to flip.</p>
+
+  <input type="file" id="photoInput" accept="image/*" hidden />
+
+  <div class="modal-overlay" id="strengths-modal" aria-hidden="true">
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="strengths-modal-title">
+      <button class="modal-close" type="button" aria-label="Close dialog">×</button>
+      <p class="modal-eyebrow">Statement entry 01</p>
+      <h2 id="strengths-modal-title">What I Bring to the Table</h2>
+      <p class="section-subtitle">
+        A mix of imagination, composure, and execution—built for modern, fast-moving tech teams.
+      </p>
+      <div class="list">
+        <div class="list-item">
+          <div class="list-index">1</div>
+          <div class="list-text">
+            <span>Very imaginative and open-minded</span>, always looking for hidden meanings and distant possibilities.
+            I connect ideas others overlook and turn them into practical directions.
+          </div>
+        </div>
+        <div class="list-item">
+          <div class="list-index">2</div>
+          <div class="list-text">
+            <span>Self-assured, even-tempered, and resistant to stress</span>, especially when stakes are high.
+            I stay composed, make clear decisions, and keep projects moving instead of getting stuck in pressure.
+          </div>
+        </div>
+        <div class="list-item">
+          <div class="list-index">3</div>
+          <div class="list-text">
+            <span>Result oriented</span>—I care about outcomes, not just effort.
+            I focus on measurable impact, closing loops, and delivering work that actually changes something.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="background-modal" aria-hidden="true">
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="background-modal-title">
+      <button class="modal-close" type="button" aria-label="Close dialog">×</button>
+      <p class="modal-eyebrow">Statement entry 02</p>
+      <h2 id="background-modal-title">Background</h2>
+      <p class="section-subtitle">
+        A grounded path from real-world experience into technology, cybersecurity, and AI.
+      </p>
+      <div class="list">
+        <div class="list-item">
+          <div class="list-index">1</div>
+          <div class="list-text">
+            While living a <span>mundane life</span> I learned about social skills—something you only gain by
+            actually living, dealing with people, and navigating different personalities.
+            That experience makes it easier for me to collaborate, read situations, and communicate clearly.
+          </div>
+        </div>
+        <div class="list-item">
+          <div class="list-index">2</div>
+          <div class="list-text">
+            <span>Enrolling in LaGuardia</span> started my path into technology.
+            The more I learned, the more I liked it—especially building skills that point toward
+            <span>cybersecurity</span>, where discipline, curiosity, and resilience really matter.
+          </div>
+        </div>
+        <div class="list-item">
+          <div class="list-index">3</div>
+          <div class="list-text">
+            <span>Enrolling into Native AI</span> is one more deliberate step into the tech industry.
+            AI is going to be everywhere, and I intend to be on the side that understands it,
+            builds with it, and uses it responsibly—grasping more knowledge instead of watching from the sidelines.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
