@@ -1,2 +1,1 @@
-# personal-website
-My personal website-built during Pursuit L1
+My personal website build during week 1 L1
